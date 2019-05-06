@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      var NumArr = Array();
+      var i;
+      for (i=0 ; i < 50; i++) {
+        NumArr.push(i);
+      }
+    </script>
+    <title></title>
+  </head>
+  <body>
+    Printing all the numbers :
+    <script>
+      var j;
+      for (j=0 ; j < NumArr.length; j++) {
+        document.write("<br />");
+        var p = NumArr[j];
+      //  document.write("val" + NumArr[j]);
+        if( (p % 3 == 0) && (p % 5 == 0)){
+        document.write("FizzBuzz");
+      }else if (p % 5 == 0) {
+        document.write("Buzz");
+      }else if ( p % 3 == 0 ) {
+        document.write("Fizz");
+      }else {
+        document.write(p);
+      }
+        document.write("\n");
+      }
+    </script>
+
+
+  </body>
+</html>

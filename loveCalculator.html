@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function love() {
+        var n = Math.random();
+        var n1=n*100 + 1;
+        var n2= Math.floor(n1);
+        if(n2>70){
+          alert("Your love percentage is " + n2 + " %.. Looks like " + t.value + " loves you a lot");
+        }else {
+          alert("Your love percentage is " + n2 + " %");
+        }
+
+      }
+    </script>
+    <title></title>
+  </head>
+  <body>
+Your name : <input type="text"  />
+<hr />
+Their name : <input type="text" name="t" value="">
+<hr />
+<input type="button" name="button" onclick="love();" value="Submit">
+  </body>
+</html>
